@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AsheaHelp</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <ul id="navbar">
+            <li class="navbarItem"><a href="index.html" class="navbarLink">Home</a></li>
+            <li class="navbarItem"><a href="crafting.html" class="navbarLink">Crafting</a></li>
+            <li class="navbarItem"><a href="enchanting.html" class="navbarLink">Enchanting</a></li>
+        </ul>
+        <h1>Enchanting</h1>
+        <p>A list of all the enchants you can get and there max level</p>
+        <p>You can buy all the enchanting books at a npc located in the library at lockwood. To add them you will need to use an anvil using lapis to replace the levels. </p>
+        <input type="text" id="searchInput" onkeyup="searchEnchantment()" placeholder="Search for enchantment...">
+        <table id="enchants">
+            <tr>
+                <th>Enchantment</th>
+                <th>Level</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Respiration</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Aqua Affinity</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Depth Strider</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Curse of Binding</td>
+                <td>1</td>
+                <td><span class="enabled">Disabled</span></td>
+            </tr>
+            <tr>
+                <td>Sharpness</td>
+                <td>5</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Smite</td>
+                <td>5</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Bane of Arthropods</td>
+                <td>5</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Fire Aspect</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Looting</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Protection</td>
+                <td>1</td>
+                <td><span class="enabled">enabled</span></td>
+            </tr>
+            <tr>
+                <td>Flame</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Punch</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Soul Speed</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Feather Falling</td>
+                <td>4</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Knockback</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Frost Walker</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Thorns</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td>5</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Silk Touch</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Unbreaking</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Projectile Protection</td>
+                <td>4</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Fortune</td>
+                <td>2</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Blast Protection</td>
+                <td>4</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Fire Protection</td>
+                <td>4</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Loyalty</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Sweeping Edge</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Impaling</td>
+                <td>5</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Channelling</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Curse of Vanishing</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Quick Charge</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Lure</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Luck of the Sea</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Riptide</td>
+                <td>3</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Multishot</td>
+                <td>1</td>
+                <td><span class="enabled">Enabled</span></td>
+            </tr>
+            <tr>
+                <td>Infinity</td>
+                <td></td>
+                <td><span class="disabled">Disabled</span></td>
+            </tr>
+            <tr>
+                <td>mending</td>
+                <td></td>
+                <td><span class="disabled">Disabled</span></td>
+            </tr>
+
+
+
+
+
+        </table>
+
+    </main>
+
+    <footer>
+        &#169Preadium - March 2024
+    </footer>
+</body>
+</html>
